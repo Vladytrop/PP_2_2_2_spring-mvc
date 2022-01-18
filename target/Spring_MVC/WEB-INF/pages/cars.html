@@ -1,0 +1,12 @@
+<table border="1">
+    <tr>
+        <th>Model</th>
+        <th>Number</th>
+        <th>Series</th>
+    </tr>
+    <tr th:each="car : ${cars}">
+        <td th:text="${car.model}"></td>
+        <td th:text="${car.number}"></td>
+        <td th:text="${car.series}"></td>
+    </tr>
+</table>
